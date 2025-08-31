@@ -74,10 +74,10 @@ function resetGame() {
   randomParagraph();
   inputField.value = "";
   clearInterval(timer);
-  timeLeft = maxTime; // Perbaikan di sini
-  charIndex = 0; // Perbaikan di sini
-  mistakes = 0; // Perbaikan di sini
-  isTyping = 0; // Perbaikan di sini
+  timeLeft = maxTime;
+  charIndex = 0;
+  mistakes = 0;
+  isTyping = 0;
 
   timeTag.innerText = timeLeft;
   mistakeTag.innerText = mistakes;
