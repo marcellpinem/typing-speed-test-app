@@ -19,7 +19,7 @@ function randomParagraph() {
     let spanTag = `<span>${span}</span>`;
     typingText.innerHTML += spanTag;
   });
-  typingText.querySelectorAll("span")[0].classList.add("active"); // Perbaikan di sini
+  typingText.querySelectorAll("span")[0].classList.add("active");
   document.addEventListener("keydown", () => inputField.focus());
   typingText.addEventListener("click", () => inputField.focus());
 }
