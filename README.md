@@ -5,7 +5,7 @@ Aplikasi web sederhana untuk menguji dan meningkatkan kecepatan mengetik Anda. D
 [![Watch the demo](https://img.shields.io/badge/YouTube-Demo-red?logo=youtube)]()
 _(Klik badge untuk menonton demo)_
 
-[![Live Demo](https://img.shields.io/badge/Try%20it%20Live-WebApp-blue?logo=netlify)]()
+[![Live Demo](https://img.shields.io/badge/Try%20it%20Live-WebApp-blue?logo=netlify)](https://typing-speed-test-marcellino.netlify.app/)
 _(Klik badge untuk mencoba web)_
 
 ---
