@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  background-color: #16acbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  background-color: white;
+  width: 770px;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .content-box {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.input-field {
+  z-index: -999;
+  opacity: 0;
+  position: absolute;
+}
+
+.content-box .typing-text {
+  max-height: 265px;
+  overflow-y: auto;
+}
+
+.typing-text::-webkit-scrollbar {
+  width: 0;
+}
+
+.typing-text p {
+  font-size: 21px;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.typing-text p span {
+  position: relative;
+}
+
+.typing-text p span.correct {
+  color: #56964f;
+}
+
+.typing-text p span.incorrect {
+  color: #cb3439;
+  background-color: #f8d7da;
+  border-radius: 3px;
+}
+
+.typing-text p span.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #16acbd;
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+
+.content-box .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 17px;
+  padding: 12px 0;
+  border-top: 1px solid #ccc;
+}
+
+.content button {
+  border: none;
+  outline: none;
+  width: 105px;
+  padding: 8px 0;
+  background-color: #16acbd;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.content button:active {
+  transform: scale(0.97);
+}
+
+.content .result-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.result-details li {
+  list-style: none;
+  height: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.result-details li:not(:first-child) {
+  border-left: 1px solid #ccc;
+  padding-left: 20px;
+}
+
+.result-details li p {
+  font-size: 19px;
+}
+
+.result-details li span {
+  display: block;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.result-details li:not(:first-child) span {
+  font-weight: 500;
+}
+
+.result-details li b {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: none;
+  }
+  body::after {
+    content: "Maaf, aplikasi ini hanya bisa diakses di perangkat desktop atau layar yang lebih besar.";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+  }
+}
