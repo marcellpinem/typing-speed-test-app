@@ -2,7 +2,7 @@
 
 Aplikasi web sederhana untuk menguji dan meningkatkan kecepatan mengetik Anda. Dibuat dengan HTML, CSS, dan JavaScript, aplikasi ini memberikan umpan balik WPM, CPM, dan kesalahan secara real-time.
 
-[![Watch the demo](https://img.shields.io/badge/YouTube-Demo-red?logo=youtube)]()
+[![Watch the demo](https://img.shields.io/badge/YouTube-Demo-red?logo=youtube)](https://youtu.be/NfjlLcCuxKw)
 _(Klik badge untuk menonton demo)_
 
 [![Live Demo](https://img.shields.io/badge/Try%20it%20Live-WebApp-blue?logo=netlify)](https://typing-speed-test-marcellino.netlify.app/)
